@@ -8,7 +8,7 @@ var app = new Vue({
             {id:4, immagine:'./assets/img/imm4.jpg'},
             {id:5, immagine:'./assets/img/imm5.jpg'}
         ],
-        indice:0,
+        indice: 0,
     },
 
     methods: {
@@ -21,7 +21,7 @@ var app = new Vue({
 
         slideLeft: function(){
             this.indice--;
-            if( this.indice < -1){
+            if( this.indice < 0){
                 this.indice = 4;
             }
         }
